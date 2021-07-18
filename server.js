@@ -88,7 +88,7 @@ function authVerify(req, res, next) {
 app.use('/signup', signupRouter);
 app.use('/login', loginRouter);
 app.use('/quiz', authVerify, quizRouter);
-app.use('/results',  resultsRouter);
+app.use('/results', authVerify, resultsRouter);
 app.use('/users', authVerify, usersRouter);
 // app.use("/users", usersRouter);
 
