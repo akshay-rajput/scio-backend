@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cors());
 // cors
 let allowedOrigins = [
-    "https://lexis-quiz.netlify.app",
+    "https://scio-quiz.netlify.app",
     "http://localhost:3000",
     "http://192.168.43.156:3000",
 ];
